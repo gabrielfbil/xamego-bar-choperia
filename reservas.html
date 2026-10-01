@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Reservas | Xamego Bar e Choperia</title>
+    <meta
+      name="description"
+      content="Solicite uma reserva no Xamego Bar e Choperia em Buriti Alegre pelo WhatsApp ou pelo formulário de reserva."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Playfair+Display:wght@600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <script defer src="js/script.js"></script>
+  </head>
+  <body data-page="reservas">
+    <header class="site-header">
+      <div class="container nav-wrap">
+        <a href="index.html" class="brand" aria-label="Xamego Bar e Choperia">
+          <img src="images/logo-xamego.svg" alt="Logo Xamego Bar e Choperia" />
+          <span>Xamego</span>
+        </a>
+
+        <button class="nav-toggle" aria-label="Abrir menu" aria-expanded="false">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+
+        <nav class="site-nav" aria-label="Menu principal">
+          <ul>
+            <li><a href="index.html">Início</a></li>
+            <li><a href="cardapio.html">Cardápio</a></li>
+            <li><a href="bebidas.html">Bebidas</a></li>
+            <li><a href="sobre.html">Sobre</a></li>
+            <li><a href="galeria.html">Galeria</a></li>
+            <li><a href="reservas.html">Reservas</a></li>
+            <li><a href="contato.html">Contato</a></li>
+          </ul>
+        </nav>
+
+        <a href="reservas.html" class="btn btn-primary nav-cta">Reserve agora</a>
+      </div>
+    </header>
+
+    <main>
+      <section class="page-hero small-hero reservation-hero">
+        <div class="page-hero__overlay"></div>
+        <div class="container page-hero__content">
+          <span class="eyebrow">Reservas</span>
+          <h1>Reserve sua mesa no Xamego</h1>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container reservation-layout">
+          <div class="reservation-card">
+            <h2>Solicite sua reserva</h2>
+            <form id="reservationForm" class="contact-form">
+              <div class="form-row">
+                <label>
+                  Nome
+                  <input type="text" name="nome" placeholder="Seu nome" required />
+                </label>
+              </div>
+
+              <div class="form-row two-cols">
+                <label>
+                  Telefone
+                  <input type="tel" name="telefone" placeholder="(00) 00000-0000" required />
+                </label>
+                <label>
+                  Número de pessoas
+                  <input type="number" name="pessoas" min="1" max="20" value="2" required />
+                </label>
+              </div>
+
+              <div class="form-row two-cols">
+                <label>
+                  Data
+                  <input type="date" name="data" required />
+                </label>
+                <label>
+                  Horário
+                  <input type="time" name="horario" required />
+                </label>
+              </div>
+
+              <div class="form-row">
+                <label>
+                  Observações
+                  <textarea name="observacoes" rows="4" placeholder="Conte algo sobre a ocasião ou preferência."></textarea>
+                </label>
+              </div>
+
+              <button type="submit" class="btn btn-primary full-width">Solicitar reserva pelo WhatsApp</button>
+            </form>
+          </div>
+
+          <aside class="info-card">
+            <h3>Importante</h3>
+            <p>
+              A reserva será enviada para confirmação pelo estabelecimento. Em caso de disponibilidade, o atendimento será confirmado pelo WhatsApp.
+            </p>
+            <div class="card-detail">
+              <strong>WhatsApp:</strong>
+              <span>(64) 98164-4207</span>
+            </div>
+            <div class="card-detail">
+              <strong>Horário:</strong>
+              <span>Terça a domingo • 18h às 00h</span>
+            </div>
+            <div class="card-detail">
+              <strong>Local:</strong>
+              <span>R. Francisco Olímpio, Buriti Alegre - GO</span>
+            </div>
+          </aside>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-grid">
+        <div>
+          <a href="index.html" class="brand brand-footer">
+            <img src="images/logo-xamego.svg" alt="Logo Xamego Bar e Choperia" />
+            <span>Xamego</span>
+          </a>
+          <p>Reserve sua mesa e aproveite o melhor ambiente do Xamego para reunir amigos e celebrar.</p>
+        </div>
+
+        <div>
+          <h3>Links rápidos</h3>
+          <ul class="footer-links">
+            <li><a href="index.html">Início</a></li>
+            <li><a href="cardapio.html">Cardápio</a></li>
+            <li><a href="bebidas.html">Bebidas</a></li>
+            <li><a href="sobre.html">Sobre</a></li>
+            <li><a href="galeria.html">Galeria</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h3>Contato</h3>
+          <ul class="footer-links footer-contact">
+            <li>📍 R. Francisco Olímpio, Buriti Alegre - GO</li>
+            <li>📞 (64) 98164-4207</li>
+            <li>🕐 Terça a domingo • 18h às 00h</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="container footer-bottom">
+        <p>© <span id="year"></span> Xamego Bar e Choperia. Todos os direitos reservados.</p>
+      </div>
+    </footer>
+  </body>
+</html>

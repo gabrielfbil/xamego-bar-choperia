@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contato | Xamego Bar e Choperia</title>
+    <meta
+      name="description"
+      content="Entre em contato com o Xamego Bar e Choperia em Buriti Alegre por WhatsApp, telefone ou formulário de contato."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Playfair+Display:wght@600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <script defer src="js/script.js"></script>
+  </head>
+  <body data-page="contato">
+    <header class="site-header">
+      <div class="container nav-wrap">
+        <a href="index.html" class="brand" aria-label="Xamego Bar e Choperia">
+          <img src="images/logo-xamego.svg" alt="Logo Xamego Bar e Choperia" />
+          <span>Xamego</span>
+        </a>
+
+        <button class="nav-toggle" aria-label="Abrir menu" aria-expanded="false">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+
+        <nav class="site-nav" aria-label="Menu principal">
+          <ul>
+            <li><a href="index.html">Início</a></li>
+            <li><a href="cardapio.html">Cardápio</a></li>
+            <li><a href="bebidas.html">Bebidas</a></li>
+            <li><a href="sobre.html">Sobre</a></li>
+            <li><a href="galeria.html">Galeria</a></li>
+            <li><a href="reservas.html">Reservas</a></li>
+            <li><a href="contato.html">Contato</a></li>
+          </ul>
+        </nav>
+
+        <a href="reservas.html" class="btn btn-primary nav-cta">Reserve agora</a>
+      </div>
+    </header>
+
+    <main>
+      <section class="page-hero small-hero contact-hero">
+        <div class="page-hero__overlay"></div>
+        <div class="container page-hero__content">
+          <span class="eyebrow">Contato</span>
+          <h1>Fale com o Xamego</h1>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container contact-layout">
+          <div class="reservation-card">
+            <h2>Envie uma mensagem</h2>
+            <form id="contactForm" class="contact-form">
+              <div class="form-row two-cols">
+                <label>
+                  Nome
+                  <input type="text" name="nome" placeholder="Seu nome" required />
+                </label>
+                <label>
+                  Telefone
+                  <input type="tel" name="telefone" placeholder="(00) 00000-0000" required />
+                </label>
+              </div>
+
+              <div class="form-row two-cols">
+                <label>
+                  E-mail
+                  <input type="email" name="email" placeholder="seuemail@email.com" />
+                </label>
+                <label>
+                  Assunto
+                  <input type="text" name="assunto" placeholder="Ex: Reserva / Sugestão / Contato" />
+                </label>
+              </div>
+
+              <div class="form-row">
+                <label>
+                  Mensagem
+                  <textarea name="mensagem" rows="5" placeholder="Digite sua mensagem" required></textarea>
+                </label>
+              </div>
+
+              <button type="submit" class="btn btn-primary full-width">Enviar mensagem</button>
+            </form>
+          </div>
+
+          <aside class="info-card">
+            <h3>Xamego Bar e Choperia</h3>
+            <ul class="contact-list">
+              <li>📍 R. Francisco Olímpio, Buriti Alegre - GO, 75660-000</li>
+              <li>📞 (64) 98164-4207</li>
+              <li>🕐 Segunda: Fechado</li>
+              <li>🕐 Terça a domingo: 18h às 00h</li>
+            </ul>
+
+            <a href="https://wa.me/5564981644207?text=Ol%C3%A1%2C%20gostaria%20de%20entrar%20em%20contato%20com%20o%20Xamego%20Bar%20e%20Choperia." class="btn btn-secondary full-width" target="_blank" rel="noreferrer">Falar pelo WhatsApp</a>
+
+            <div class="map-box">
+              <iframe
+                title="Mapa do Xamego Bar e Choperia"
+                src="https://www.google.com/maps?q=R.%20Francisco%20Ol%C3%ADmpio%20Buriti%20Alegre%20GO&output=embed"
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+              ></iframe>
+            </div>
+          </aside>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-grid">
+        <div>
+          <a href="index.html" class="brand brand-footer">
+            <img src="images/logo-xamego.svg" alt="Logo Xamego Bar e Choperia" />
+            <span>Xamego</span>
+          </a>
+          <p>Bar e choperia em Buriti Alegre com atendimento acolhedor e ambiente para momentos especiais.</p>
+        </div>
+
+        <div>
+          <h3>Links rápidos</h3>
+          <ul class="footer-links">
+            <li><a href="index.html">Início</a></li>
+            <li><a href="cardapio.html">Cardápio</a></li>
+            <li><a href="bebidas.html">Bebidas</a></li>
+            <li><a href="sobre.html">Sobre</a></li>
+            <li><a href="galeria.html">Galeria</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h3>Contato</h3>
+          <ul class="footer-links footer-contact">
+            <li>📍 R. Francisco Olímpio, Buriti Alegre - GO</li>
+            <li>📞 (64) 98164-4207</li>
+            <li>🕐 Terça a domingo • 18h às 00h</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="container footer-bottom">
+        <p>© <span id="year"></span> Xamego Bar e Choperia. Todos os direitos reservados.</p>
+      </div>
+    </footer>
+  </body>
+</html>

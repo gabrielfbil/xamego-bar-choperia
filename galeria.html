@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Galeria | Xamego Bar e Choperia</title>
+    <meta
+      name="description"
+      content="Veja fotos do ambiente, pratos, porções, bebidas e momentos do Xamego Bar e Choperia em Buriti Alegre."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Playfair+Display:wght@600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <script defer src="js/script.js"></script>
+  </head>
+  <body data-page="galeria">
+    <header class="site-header">
+      <div class="container nav-wrap">
+        <a href="index.html" class="brand" aria-label="Xamego Bar e Choperia">
+          <img src="images/logo-xamego.svg" alt="Logo Xamego Bar e Choperia" />
+          <span>Xamego</span>
+        </a>
+
+        <button class="nav-toggle" aria-label="Abrir menu" aria-expanded="false">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+
+        <nav class="site-nav" aria-label="Menu principal">
+          <ul>
+            <li><a href="index.html">Início</a></li>
+            <li><a href="cardapio.html">Cardápio</a></li>
+            <li><a href="bebidas.html">Bebidas</a></li>
+            <li><a href="sobre.html">Sobre</a></li>
+            <li><a href="galeria.html">Galeria</a></li>
+            <li><a href="reservas.html">Reservas</a></li>
+            <li><a href="contato.html">Contato</a></li>
+          </ul>
+        </nav>
+
+        <a href="reservas.html" class="btn btn-primary nav-cta">Reserve agora</a>
+      </div>
+    </header>
+
+    <main>
+      <section class="page-hero small-hero gallery-hero">
+        <div class="page-hero__overlay"></div>
+        <div class="container page-hero__content">
+          <span class="eyebrow">Galeria</span>
+          <h1>Momentos, sabores e ambiente do Xamego</h1>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container">
+          <div class="gallery-grid" id="galleryGrid">
+            <button class="gallery-item" data-full="https://images.unsplash.com/photo-1559339352-11d035aa65de?auto=format&fit=crop&w=1200&q=80" aria-label="Ver imagem do ambiente">
+              <img src="https://images.unsplash.com/photo-1559339352-11d035aa65de?auto=format&fit=crop&w=900&q=80" alt="Ambiente do bar" />
+            </button>
+            <button class="gallery-item" data-full="https://images.unsplash.com/photo-1528605248644-14dd04022da1?auto=format&fit=crop&w=1200&q=80" aria-label="Ver imagem de porções">
+              <img src="https://images.unsplash.com/photo-1528605248644-14dd04022da1?auto=format&fit=crop&w=900&q=80" alt="Porções do bar" />
+            </button>
+            <button class="gallery-item" data-full="https://images.unsplash.com/photo-1513104890138-7c749659a591?auto=format&fit=crop&w=1200&q=80" aria-label="Ver imagem de pizza e comida">
+              <img src="https://images.unsplash.com/photo-1513104890138-7c749659a591?auto=format&fit=crop&w=900&q=80" alt="Pizza e pratos" />
+            </button>
+            <button class="gallery-item" data-full="https://images.unsplash.com/photo-1514362545857-3bc16c4c7d1b?auto=format&fit=crop&w=1200&q=80" aria-label="Ver imagem de coquetéis">
+              <img src="https://images.unsplash.com/photo-1514362545857-3bc16c4c7d1b?auto=format&fit=crop&w=900&q=80" alt="Coquetéis" />
+            </button>
+            <button class="gallery-item" data-full="https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&w=1200&q=80" aria-label="Ver imagem de mesa de amigos">
+              <img src="https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&w=900&q=80" alt="Mesa de amigos no bar" />
+            </button>
+            <button class="gallery-item" data-full="https://images.unsplash.com/photo-1552566626-52f8b828add9?auto=format&fit=crop&w=1200&q=80" aria-label="Ver ambiente do chopp">
+              <img src="https://images.unsplash.com/photo-1552566626-52f8b828add9?auto=format&fit=crop&w=900&q=80" alt="Choperia" />
+            </button>
+            <button class="gallery-item" data-full="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=1200&q=80" aria-label="Ver ambiente do restaurante">
+              <img src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=900&q=80" alt="Ambiente do restaurante" />
+            </button>
+            <button class="gallery-item" data-full="https://images.unsplash.com/photo-1521017432531-fbd92d768814?auto=format&fit=crop&w=1200&q=80" aria-label="Ver prato em destaque">
+              <img src="https://images.unsplash.com/photo-1521017432531-fbd92d768814?auto=format&fit=crop&w=900&q=80" alt="Prato em destaque" />
+            </button>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <div id="galleryModal" class="gallery-modal" aria-hidden="true">
+      <button class="modal-close" aria-label="Fechar imagem">×</button>
+      <img src="" alt="Imagem ampliada do Xamego" />
+    </div>
+
+    <footer class="site-footer">
+      <div class="container footer-grid">
+        <div>
+          <a href="index.html" class="brand brand-footer">
+            <img src="images/logo-xamego.svg" alt="Logo Xamego Bar e Choperia" />
+            <span>Xamego</span>
+          </a>
+          <p>Experiência acolhedora em Buriti Alegre para quem curte bons drinks, comidas e companhia.</p>
+        </div>
+
+        <div>
+          <h3>Links rápidos</h3>
+          <ul class="footer-links">
+            <li><a href="index.html">Início</a></li>
+            <li><a href="cardapio.html">Cardápio</a></li>
+            <li><a href="bebidas.html">Bebidas</a></li>
+            <li><a href="sobre.html">Sobre</a></li>
+            <li><a href="galeria.html">Galeria</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h3>Contato</h3>
+          <ul class="footer-links footer-contact">
+            <li>📍 R. Francisco Olímpio, Buriti Alegre - GO</li>
+            <li>📞 (64) 98164-4207</li>
+            <li>🕐 Terça a domingo • 18h às 00h</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="container footer-bottom">
+        <p>© <span id="year"></span> Xamego Bar e Choperia. Todos os direitos reservados.</p>
+      </div>
+    </footer>
+  </body>
+</html>

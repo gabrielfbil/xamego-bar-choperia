@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cardápio | Xamego Bar e Choperia</title>
+    <meta
+      name="description"
+      content="Conheça o cardápio do Xamego Bar e Choperia em Buriti Alegre. Porções, pizzas, pratos e opções para compartilhar."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Playfair+Display:wght@600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <script defer src="js/script.js"></script>
+  </head>
+  <body data-page="cardapio">
+    <header class="site-header">
+      <div class="container nav-wrap">
+        <a href="index.html" class="brand" aria-label="Xamego Bar e Choperia">
+          <img src="images/logo-xamego.svg" alt="Logo Xamego Bar e Choperia" />
+          <span>Xamego</span>
+        </a>
+
+        <button class="nav-toggle" aria-label="Abrir menu" aria-expanded="false">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+
+        <nav class="site-nav" aria-label="Menu principal">
+          <ul>
+            <li><a href="index.html">Início</a></li>
+            <li><a href="cardapio.html">Cardápio</a></li>
+            <li><a href="bebidas.html">Bebidas</a></li>
+            <li><a href="sobre.html">Sobre</a></li>
+            <li><a href="galeria.html">Galeria</a></li>
+            <li><a href="reservas.html">Reservas</a></li>
+            <li><a href="contato.html">Contato</a></li>
+          </ul>
+        </nav>
+
+        <a href="reservas.html" class="btn btn-primary nav-cta">Reserve agora</a>
+      </div>
+    </header>
+
+    <main>
+      <section class="page-hero small-hero">
+        <div class="page-hero__overlay"></div>
+        <div class="container page-hero__content">
+          <span class="eyebrow">Cardápio</span>
+          <h1>Sabores que pedem companhia</h1>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container">
+          <div class="section-heading center">
+            <span class="eyebrow">Escolha por categoria</span>
+            <h2>Confira nossas opções</h2>
+          </div>
+
+          <div class="filter-row" aria-label="Filtros do cardápio">
+            <button class="filter-btn is-active" data-filter="all">Todos</button>
+            <button class="filter-btn" data-filter="Porções">Porções</button>
+            <button class="filter-btn" data-filter="Pizzas">Pizzas</button>
+            <button class="filter-btn" data-filter="Comidas">Comidas</button>
+            <button class="filter-btn" data-filter="Petiscos">Petiscos</button>
+            <button class="filter-btn" data-filter="Pratos">Pratos</button>
+            <button class="filter-btn" data-filter="Sobremesas">Sobremesas</button>
+          </div>
+
+          <div id="menu-grid" class="menu-grid"></div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-grid">
+        <div>
+          <a href="index.html" class="brand brand-footer">
+            <img src="images/logo-xamego.svg" alt="Logo Xamego Bar e Choperia" />
+            <span>Xamego</span>
+          </a>
+          <p>Bar e choperia em Buriti Alegre com ambiente acolhedor, drinks, pratos e reuniões especiais.</p>
+        </div>
+
+        <div>
+          <h3>Links rápidos</h3>
+          <ul class="footer-links">
+            <li><a href="index.html">Início</a></li>
+            <li><a href="cardapio.html">Cardápio</a></li>
+            <li><a href="bebidas.html">Bebidas</a></li>
+            <li><a href="sobre.html">Sobre</a></li>
+            <li><a href="galeria.html">Galeria</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h3>Contato</h3>
+          <ul class="footer-links footer-contact">
+            <li>📍 R. Francisco Olímpio, Buriti Alegre - GO</li>
+            <li>📞 (64) 98164-4207</li>
+            <li>🕐 Terça a domingo • 18h às 00h</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="container footer-bottom">
+        <p>© <span id="year"></span> Xamego Bar e Choperia. Todos os direitos reservados.</p>
+      </div>
+    </footer>
+  </body>
+</html>
